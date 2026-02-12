@@ -175,33 +175,33 @@ document.getElementById("yesBtn").addEventListener("click", function() {
 });
 
 // No button runs away
-// const noBtn = document.getElementById("noBtn");
-//noBtn.addEventListener("mouseover", function() {
-//    const x = Math.random() * (window.innerWidth - 100);
-//    const y = Math.random() * (window.innerHeight - 100);
-//    noBtn.style.left = x + "px";
-//    noBtn.style.top = y + "px";
-// });
-
-const noBtn = document.getElementById("noBtn");
-
+ const noBtn = document.getElementById("noBtn");
 noBtn.addEventListener("mouseover", function() {
-    moveButton();
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 100);
+    noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+	});
+
+// const noBtn = document.getElementById("noBtn");
+
+// noBtn.addEventListener("mouseover", function() {
+  //   moveButton();
 });
 
-noBtn.addEventListener("click", function() {
-    const msg = document.createElement("div");
-    msg.innerText = "Vaaipu illa Rajaa... 😜 You are mine forever!";
-    msg.style.position = "fixed";
-    msg.style.top = "20%";
-    msg.style.left = "50%";
-    msg.style.transform = "translateX(-50%)";
-    msg.style.fontSize = "24px";
-    msg.style.color = "white";
-    document.body.appendChild(msg);
+//noBtn.addEventListener("click", function() {
+  //  const msg = document.createElement("div");
+    //msg.innerText = "Vaaipu illa Rajaa... 😜 You are mine forever!";
+    //msg.style.position = "fixed";
+    //msg.style.top = "20%";
+    //msg.style.left = "50%";
+    //msg.style.transform = "translateX(-50%)";
+    //msg.style.fontSize = "24px";
+    //msg.style.color = "white";
+    //document.body.appendChild(msg);
 
-    moveButton();
-});
+    //moveButton();
+//});
 
 function moveButton() {
     const x = Math.random() * (window.innerWidth - 100);
@@ -231,4 +231,5 @@ setInterval(createHeart, 500);
 
 </body>
 </html>
+
 
